@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+.top {
+  background: url(top.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.top h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 60px;
+  padding: 30px 150px;
+  margin: auto;
+  border: 5px solid black;
+  top: 100px;
+  background: rgba(255,255,255,0.3);
+  font-family: 'Quicksand', sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+   list-style: none;
+   font-size: 35px;
+   padding: 20px;
+   font-family: 'Quicksand', sans-serif;
+ }
+ nav li::first-letter {
+   color: red;
+ }
+ iframe {
+   padding: 40px;
+ }
+ body {
+   background: #BDB8AE;
+ }
+ .background {
+   background: white;
+   width: 1000px;
+   margin: auto;
+ }
+  .introduction {
+   text-align: center;
+   padding: 100px 0;
+   line-height: 30px;
+ }
+ .introduction h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .introduction h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;/*線の上下位置*/
+    display: inline-block;
+    width: 400px;/*線の長さ*/
+    height: 5px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #6F6C66;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+  }
+  .introduction h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 400px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #6F6C66;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+ .introduction h2::first-letter{
+   color: red;
+ }
+ .two {
+   text-align: center;
+ }
+ .two h2 {
+   position: relative;
+   display: inline-block;
+   margin-bottom: 1em;
+   font-family: 'Quicksand', sans-serif;
+ }
+ .two h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 400px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #6F6C66;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+.two h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 400px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #6F6C66;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+ .two h2::first-letter
+ {
+   color: red;
+ }
+ .youtube  {
+   background: gray;
+   width: 500px;
+   height: 300px;
+   margin: auto;
+ }
+.back-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.back-block img {
+  width: 300px;
+  height: 300px;
+}
+.two li {
+  line-height: 40px;
+  list-style: none;
+}
+.menu {
+  padding: 40px 0;
+}
+.foot ,.baby {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.foot img {
+  width: 250px;
+  height: 250px;
+}
+.baby img {
+  width: 300px;
+  height: 250px;
+}
+.foot p ,.baby p {
+  padding: 60px 40px;
+}
+.inner-box {
+  background: white;
+  width: 1000px;
+  margin: auto;
+}
+.buttom {
+  display: block;
+  width: 150px;
+  margin: auto;
+  padding: 20px;
+}
+.buttom a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: gray;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px gray;
+  border-radius: 3px;
+}
+.buttom a:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+  footer {
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+body {
+}
+}
+@media screen and (max-width: 768px) {
+/* 768pxまでの幅の場合に適応される */
+body {
+  background: white;
+}
+nav ul {
+  background: #BDB8AE;
+}
+nav ul li{
+  font-size: 20px;
+}
+
+.background {
+  display: block;
+  width: 700px;
+  margin: auto;
+}
+.inner-box {
+  display: block;
+  width: 700px;
+  margin: auto;
+}
+footer {
+  background: #BDB8AE;
+}
+@media screen and (max-width: 480px) {
+/* 480pxまでの幅の場合に適応される */
+body {
+background-color: white;
+}
+.top {
+  height: 150px;
+  position: relative;
+}
+.top h1 {
+  position: absolute;
+  font-size: 15px;
+  padding: 30px;
+  top: 20px;
+  left: 120px;
+}
+nav ul li {
+  font-size: 10px;
+  text-align: center;
+}
+.introduction {
+  padding: 40px 0;
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+.introduction h2 {
+  font-size: 15px;
+}
+.introduction p {
+  padding: 30px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+.introduction h2::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 200px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #6F6C66;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+.introduction h2:before {
+content: '';
+position: absolute;
+left: 50%;
+top: -15px;/*線の上下位置*/
+display: inline-block;
+width: 200px;/*線の長さ*/
+height: 5px;/*線の太さ*/
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);/*位置調整*/
+background-color: #6F6C66;/*線の色*/
+border-radius: 2px;/*線の丸み*/
+}
+.introduction h2::first-letter{
+ color: red;
+}
+.two {
+ text-align: center;
+}
+.two h2 {
+ position: relative;
+ display: inline-block;
+ font-size: 15px;
+ margin-bottom: 1em;
+ font-family: 'Quicksand', sans-serif;
+}
+.two h2:after {
+content: '';
+position: absolute;
+left: 50%;
+bottom: -15px;/*線の上下位置*/
+display: inline-block;
+width: 200px;/*線の長さ*/
+height: 5px;/*線の太さ*/
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);/*位置調整*/
+background-color: #6F6C66;/*線の色*/
+border-radius: 2px;/*線の丸み*/
+}
+.two h2:before {
+content: '';
+position: absolute;
+left: 50%;
+top: -15px;/*線の上下位置*/
+display: inline-block;
+width: 200px;/*線の長さ*/
+height: 5px;/*線の太さ*/
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);/*位置調整*/
+background-color: #6F6C66;/*線の色*/
+border-radius: 2px;/*線の丸み*/
+}
+.background {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+.back-block {
+  display: flex;
+  padding: 20px 0;
+}
+.back-block img {
+  width: 100px;
+  height: 100px;
+}
+.back-block p {
+  font-size: 13px;
+  padding: 10px 0;
+}
+.menu {
+  padding: 10px;
+}
+.menu ul li {
+  font-size: 12px;
+  line-height: 20px;
+}
+.youtube {
+  width: 250px;
+  height: 150px;
+}
+.inner-box {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+.foot ,.baby {
+  padding: 0;
+}
+.foot img ,.baby img{
+  width: 120px;
+  height: 100px;
+  padding: 15px 0;
+}
+.foot p ,.baby p{
+  font-size: 13px;
+  padding: 20px 10px;
+}
+
+}
